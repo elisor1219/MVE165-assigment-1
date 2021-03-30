@@ -2,7 +2,7 @@ using Clp
 using JuMP
 using Gurobi
 
-debuging = true
+debuging = false
 
 include("Assignment_1_mod.jl")
 
