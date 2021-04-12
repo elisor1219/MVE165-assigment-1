@@ -42,7 +42,7 @@ function build_zMax_model()
     @constraint(model, sum(x[i]*crop_table[i,2] for i in CROPS_INDEX) <= 5000)
 
     #The amount of biofuel we are exporting.
-    @constraint(model, sum(B[i] for i in FUEL_INDEX) == 280000)
+    @constraint(model, sum(B[i] for i in FUEL_INDEX) >= 280000)
 
     #We can only buy 150 000 liters of petrol.
     @constraint(model, petrol <= 150000)
