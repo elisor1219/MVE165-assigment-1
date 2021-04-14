@@ -1,0 +1,163 @@
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  5.481630343e+05
+
+User-callback calls 35, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 552803.7857142859
+Methanol = 137131.00000000003
+Petrol disel = 150000.0
+Biodisel = 617089.5000000002
+VegOil = 685655.0
+Water = 5000
+X[1] = 850.0
+X[2] = 0.0
+X[3] = 750.0
+
+
+Water = 4000
+Optimal objective  5.345664343e+05
+
+User-callback calls 35, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 536356.2857142859
+Methanol = 133476.00000000003
+Petrol disel = 150000.0
+Biodisel = 600642.0000000002
+VegOil = 667380.0
+Water = 4000
+X[1] = 600.0
+X[2] = 0.0
+X[3] = 1000.0
+
+Water = 3000
+Optimal objective  5.209698343e+05
+
+User-callback calls 35, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 519908.78571428586
+Methanol = 129821.00000000003
+Petrol disel = 150000.0
+Biodisel = 584194.5000000001
+VegOil = 649105.0
+Water = 3000
+X[1] = 350.0
+X[2] = 0.0
+X[3] = 1250.0
+
+Water = 2000
+Optimal objective  5.073732343e+05
+
+User-callback calls 35, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 503461.28571428586
+Methanol = 126166.00000000003
+Petrol disel = 150000.0
+Biodisel = 567747.0000000001
+VegOil = 630830.0
+Water = 2000
+X[1] = 100.0
+X[2] = 0.0
+X[3] = 1500.0
+
+Water = 1000
+Optimal objective  3.279725143e+05
+
+User-callback calls 37, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 286444.28571428574
+Methanol = 77940.0
+Petrol disel = 150000.0
+Biodisel = 350730.0
+VegOil = 389700.0
+X[1] = 0.0
+X[2] = 0.0
+X[3] = 1000.0
+
+Water = 500
+Optimal objective  1.830041143e+05
+
+User-callback calls 37, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 111079.28571428574
+Methanol = 38970.0
+Petrol disel = 150000.0
+Biodisel = 175365.00000000003
+VegOil = 194850.0
+X[1] = 0.0
+X[2] = 0.0
+X[3] = 500.0
+
+Water = 400
+Optimal objective  1.540104343e+05
+
+User-callback calls 37, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 76006.28571428574
+Methanol = 31176.000000000004
+Petrol disel = 150000.0
+Biodisel = 140292.00000000003
+VegOil = 155880.0
+X[1] = 0.0
+X[2] = 0.0
+X[3] = 400.0
+
+Water = 375
+Optimal objective  1.467620143e+05
+
+User-callback calls 37, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 67238.03571428574
+Methanol = 29227.500000000007
+Petrol disel = 150000.0
+Biodisel = 131523.75000000003
+VegOil = 146137.5
+X[1] = 0.0
+X[2] = 0.0
+X[3] = 375.0
+
+Water = 371
+Optimal objective  1.456022671e+05
+
+User-callback calls 37, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 65835.11571428571
+Methanol = 28915.739999999998
+Petrol disel = 150000.0
+Biodisel = 130120.82999999999
+VegOil = 144578.69999999998
+X[1] = 0.0
+X[2] = 0.0
+X[3] = 371.0
+
+Ser att alla grödor går till X[3] då den har minst vattenkonsuption.
+Profit minskar då mindre vatten då vi behöver fortsätta köpa fullt "petrol"
+"Petrol" oföreändrat. 
+
+
