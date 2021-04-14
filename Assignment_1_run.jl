@@ -19,18 +19,22 @@ set_optimizer(model, Gurobi.Optimizer)
 optimize!(model)
 
 println("\n")
-println("B[1] = ", value.(B.data[1]))
-println("B[2] = ", value.(B.data[2]))
-println("B[3] = ", value.(B.data[3]))
+println("B[1] (B5) = \t", value.(B.data[1]))
+println("B[2] (B30) = \t", value.(B.data[2]))
+println("B[3] (B100) = \t", value.(B.data[3]))
 
-println("Methanol = ", value.(Methanol))
-println("Petrol disel = ", value.(petrol))
-println("Biodisel = ", value.(unrefBiodiesel))
-println("VegOil = ", value.(VegOil))
+println("\n")
+println("Methanol = \t", value.(Methanol))
+println("Petrol disel = \t", value.(petrol))
+println("Biodisel = \t", value.(unrefBiodiesel))
+println("VegOil = \t", value.(VegOil))
+println("Water in use = \t", value.(x.data[1])*crop_table[1,2]+value.(x.data[2])*crop_table[2,2]+value.(x.data[3])*crop_table[3,2])
+println("Area in use = \t", value.(x.data[1])+value.(x.data[2])+value.(x.data[3]))
 
-println("X[1] = ", value.(x.data[1]))
-println("X[2] = ", value.(x.data[2]))
-println("X[3] = ", value.(x.data[3]))
+println("\n")
+println("X[1] (Soybeans) = \t", value.(x.data[1]))
+println("X[2] (Sunflower seeds) = ", value.(x.data[2]))
+println("X[3] (Cotton seeds) = \t", value.(x.data[3]))
 
 
 if debuging

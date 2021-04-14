@@ -7,6 +7,7 @@ function build_zMax_model()
     @variable(model, B[FUEL_INDEX] >= 0) #The amount of liter for biofuel i = 1,2,3.
 
 
+
     #The amount of petrol disel we are using.
     petrol = sum(B[i]*(1-product_table[i,1]) for i in FUEL_INDEX)
 
@@ -35,10 +36,10 @@ function build_zMax_model()
     #@constraint(m, petrol >= 0)
 
     # TODO: Rename this to something better, like hektar or area.
-    #Yield constraint
+    #Yield constraint 1600
     @constraint(model, sum(x[i] for i in CROPS_INDEX) <= 1600)
 
-    #Water constraint
+    #Water constraint 5000
     @constraint(model, sum(x[i]*crop_table[i,2] for i in CROPS_INDEX) <= 5000)
 
     #The amount of biofuel we are exporting.
