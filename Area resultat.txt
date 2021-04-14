@@ -1,0 +1,184 @@
+Solved in 4 iterations and 0.01 seconds
+Optimal objective  5.481630343e+05
+
+User-callback calls 35, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 552803.7857142859
+Methanol = 137131.00000000003
+Petrol disel = 150000.0
+Biodisel = 617089.5000000002
+VegOil = 685655.0
+X[1] = 850.0
+X[2] = 0.0
+X[3] = 750.0
+
+
+Area = 1500
+Optimal objective  5.205290143e+05
+
+User-callback calls 35, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 519375.53571428586
+Methanol = 129702.50000000003
+Petrol disel = 150000.0
+Biodisel = 583661.2500000001
+VegOil = 648512.5
+X[1] = 875.0
+X[2] = 0.0
+X[3] = 625.0
+
+
+Area = 1400
+Optimal objective  4.928949943e+05
+
+User-callback calls 35, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 485947.28571428586
+Methanol = 122274.00000000003
+Petrol disel = 150000.0
+Biodisel = 550233.0000000001
+VegOil = 611370.0
+X[1] = 900.0
+X[2] = 0.0
+X[3] = 500.0
+
+
+Area = 1300
+Optimal objective  4.652609743e+05
+
+User-callback calls 35, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 452519.0357142858
+Methanol = 114845.50000000001
+Petrol disel = 150000.0
+Biodisel = 516804.75000000006
+VegOil = 574227.5
+X[1] = 925.0
+X[2] = 0.0
+X[3] = 375.0
+
+
+Area = 1200
+Optimal objective  4.376269543e+05
+
+User-callback calls 35, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 419090.7857142858
+Methanol = 107417.00000000001
+Petrol disel = 150000.0
+Biodisel = 483376.50000000006
+VegOil = 537085.0
+X[1] = 950.0
+X[2] = 0.0
+X[3] = 250.0
+
+
+Area = 1000
+Optimal objective  3.823589143e+05
+
+User-callback calls 34, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 352234.2857142858
+Methanol = 92560.00000000001
+Petrol disel = 150000.0
+Biodisel = 416520.00000000006
+VegOil = 462800.0
+X[1] = 1000.0
+X[2] = 0.0
+X[3] = 0.0
+
+
+Area = 750
+Optimal objective  2.962781143e+05
+
+User-callback calls 34, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 248104.28571428577
+Methanol = 69420.00000000001
+Petrol disel = 150000.0
+Biodisel = 312390.00000000006
+VegOil = 347100.0
+X[1] = 750.0
+X[2] = 0.0
+X[3] = 0.0
+
+
+Area = 500
+Optimal objective  2.101973143e+05
+
+User-callback calls 34, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 143974.28571428574
+Methanol = 46280.0
+Petrol disel = 150000.0
+Biodisel = 208260.00000000003
+VegOil = 231400.0
+X[1] = 500.0
+X[2] = 0.0
+X[3] = 0.0
+
+
+Area = 350
+Optimal objective  1.585488343e+05
+
+User-callback calls 37, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 81496.28571428574
+Methanol = 32396.000000000004
+Petrol disel = 150000.0
+Biodisel = 145782.00000000003
+VegOil = 161980.0
+X[1] = 350.0
+X[2] = 0.0
+X[3] = 0.0
+
+
+Area = 313
+Optimal objective  1.458088759e+05
+
+User-callback calls 37, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 66085.04571428573
+Methanol = 28971.280000000006
+Petrol disel = 150000.0
+Biodisel = 130370.76000000001
+VegOil = 144856.4
+X[1] = 313.0
+X[2] = 0.0
+X[3] = 0.0
+
+
+Märkte att B[2] (B30) är det som är bäst, så länge vi har petrol
+Petrol är oberoende av area.
+Allt hamnar i X[1] då den har bäst Yield.
+
