@@ -1,0 +1,5 @@
+Ser "petrol" är oberoende av "area" och "water"
+
+Ser "area" är oberoende av "petrol"	area(water) = ?????
+
+Ser "water" är oberoende av "petrol" 	water(area) = ?????
