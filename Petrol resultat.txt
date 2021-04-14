@@ -1,0 +1,92 @@
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  5.481630343e+05
+
+User-callback calls 35, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 214285.7142857143
+B[3] = 552803.7857142859
+Methanol = 137131.00000000003
+Petrol disel = 150000.0
+Biodisel = 617089.5000000002
+VegOil = 685655.0
+X[1] = 850.0
+X[2] = 0.0
+X[3] = 750.0
+
+
+Petrol = 0
+Optimal objective  5.101273200e+05
+
+User-callback calls 36, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 0.0
+B[3] = 617089.5000000001
+Methanol = 137131.00000000003
+Petrol disel = 0.0
+Biodisel = 617089.5000000001
+VegOil = 685655.0
+X[1] = 850.0
+X[2] = 0.0
+X[3] = 750.0
+
+
+Petrol = 75000
+Optimal objective  5.291451771e+05
+
+User-callback calls 35, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 107142.85714285714
+B[3] = 584946.642857143
+Methanol = 137131.0
+Petrol disel = 75000.0
+Biodisel = 617089.5000000001
+VegOil = 685655.0
+X[1] = 850.0
+X[2] = 0.0
+X[3] = 750.0
+
+
+Petrol = 100000
+Optimal objective  5.354844629e+05
+
+User-callback calls 35, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 142857.14285714287
+B[3] = 574232.3571428573
+Methanol = 137131.00000000003
+Petrol disel = 100000.0
+Biodisel = 617089.5000000001
+VegOil = 685655.0
+X[1] = 850.0
+X[2] = 0.0
+X[3] = 750.0
+
+
+Petrol = 50000
+Optimal objective  5.228058914e+05
+
+User-callback calls 35, time in user-callback 0.00 sec
+
+
+B[1] = 0.0
+B[2] = 71428.57142857143
+B[3] = 595660.9285714286
+Methanol = 137131.0
+Petrol disel = 50000.0
+Biodisel = 617089.5000000001
+VegOil = 685655.0
+X[1] = 850.0
+X[2] = 0.0
+X[3] = 750.0
+
+Kan se ju mindre "petrol" behöver vi lägga mer på B[3] (B100) då den inte behöver "petrol".
+Ökar "petrol" kommer inget på B[1], då det kostar för mycket pengar (i petrol) smat skatt.
+"Petrol" ändrar inte grödor då de är oberoende. 
