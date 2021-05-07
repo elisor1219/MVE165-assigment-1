@@ -2,9 +2,7 @@ using Clp
 using JuMP
 using Gurobi
 
-debuging = false
-
-include("Assignment_1_mod.jl")
+include("Assignment_1_mod_loop.jl")
 
 # model - The model
 # x - Hektar / crop (var)
@@ -15,11 +13,11 @@ include("Assignment_1_mod.jl")
 # VegOil - Vegetable oil
 starVal = 1600
 jumpVal = 100
-endVal = 2500
+endVal = 2600
 i = starVal
-iterations = (endVal-starVal)/jumpVal + 1
+iterations = round((endVal-starVal)/jumpVal + 1)
 
-zA = zeros(1,convert(UInt8, iterations))
+zA = zeros(1,convert(Int64, iterations))
 
 B5A = zeros(1,convert(UInt8, iterations))
 B30A = zeros(1,convert(UInt8, iterations))
@@ -35,7 +33,7 @@ SoybeansA = zeros(1,convert(UInt8, iterations))
 SunflowerA = zeros(1,convert(UInt8, iterations))
 CottonA = zeros(1,convert(UInt8, iterations))
 j = 1
-while i <= endVal
+while true
     global model, x, B, Methanol, petrol, unrefBiodiesel, VegOil = build_zMax_model(i)
     set_optimizer(model, Gurobi.Optimizer)
     optimize!(model)
@@ -59,76 +57,42 @@ while i <= endVal
 
     println("B[1] (B5) = \t", value.(B.data[2]))
 
+    #The way to break the loop.
+    if abs(endVal-i) <= 10^(-8)
+        break
+    end
+
+
     global j = j + 1
     global i =  i + jumpVal
 end
 
 println("\n")
-println("Z (Obj) = \t", zA)
+println("-------------------------------------------\n")
+println("Z (Obj) = \t", round.(zA))
 
 println("\n")
-println("B[1] (B5) = \t", B5A)
-println("B[2] (B30) = \t", B30A)
-println("B[3] (B100) = \t", B100A)
+println("B[1] (B5) = \t", round.(B5A))
+println("B[2] (B30) = \t", round.(B30A))
+println("B[3] (B100) = \t", round.(B100A))
 
 println("\n")
-println("Methanol = \t", MethanolA)
-println("Petrol disel = \t", PetrolDiselA)
-println("Biodisel = \t", BiodiselA)
-println("VegOil = \t", VegOilA)
-println("Water in use = \t", WaterInUseA)
-println("Area in use = \t", AreaInUseA)
+println("Methanol = \t", round.(MethanolA))
+println("Petrol disel = \t", round.(PetrolDiselA))
+println("Biodisel = \t", round.(BiodiselA))
+println("VegOil = \t", round.(VegOilA))
+println("Water in use = \t", round.(WaterInUseA))
+println("Area in use = \t", round.(AreaInUseA))
 
 println("\n")
-println("X[1] (Soybeans) = \t", SoybeansA)
-println("X[2] (Sunflower seeds) = ", SunflowerA)
-println("X[3] (Cotton seeds) = \t", CottonA)
+println("X[1] (Soybeans) = \t", round.(SoybeansA))
+println("X[2] (Sunflower seeds) = ", round.(SunflowerA))
+println("X[3] (Cotton seeds) = \t", round.(CottonA))
+println("-------------------------------------------\n")
 
-
-#println("\n")
-#println("B[1] (B5) = \t", value.(B.data[1]))
-#println("B[2] (B30) = \t", value.(B.data[2]))
-#println("B[3] (B100) = \t", value.(B.data[3]))
-#
-#println("\n")
-#println("Methanol = \t", value.(Methanol))
-#println("Petrol disel = \t", value.(petrol))
-#println("Biodisel = \t", value.(unrefBiodiesel))
-#println("VegOil = \t", value.(VegOil))
-#println("Water in use = \t", value.(x.data[1])*crop_table[1,2]+value.(x.data[2])*crop_table[2,2]+value.(x.data[3])*crop_table[3,2])
-#println("Area in use = \t", value.(x.data[1])+value.(x.data[2])+value.(x.data[3]))
-#
-#println("\n")
-#println("X[1] (Soybeans) = \t", value.(x.data[1]))
-#println("X[2] (Sunflower seeds) = ", value.(x.data[2]))
-#println("X[3] (Cotton seeds) = \t", value.(x.data[3]))
-
-
-if debuging
-    R_Biodisel = value.(unrefBiodiesel)
-    R_VegOil = value.(VegOil)
-    R_Methanol = value.(Methanol)
-    Biodisel = 0
-    VegOil = value.(VegOil)
-    Methanol = value.(Methanol)
-    i = 0
-    while Biodisel < R_Biodisel
-
-        if VegOil - 1 < 0 || Methanol - 0.2 < 0
-            break
-        end
-
-        global Biodisel = Biodisel + 0.9
-        global VegOil = VegOil - 1
-        global  Methanol = Methanol - 0.2
-
-
-        global i = i + 1
+printVar = B5A
+    println("\n-----------------")
+    for i = 1:size(printVar)[2]
+        println(convert(Int64, round(printVar[i])))
     end
-    println("\n")
-    println("Biodisel = ", Biodisel)
-    println("R_Biodisel = ", R_Biodisel)
-    println("VegOil = ", VegOil)
-    println("Methanol = ", Methanol)
-    println("i = ", i)
-end
+    println("-----------------\n")

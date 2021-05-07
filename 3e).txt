@@ -8,3 +8,5 @@ Det blir mer bara en "kostnad" för att uppnå måttet på 280 000.
 
 
 Generelt gäller att när taxen minstakr ökar Z (profit)
+
+När alla "tax" ökar samtindigt kan man öka med +0,19 tills allt går över till B3
